@@ -1,0 +1,91 @@
+@media (min-width: 600px){
+  //main component
+  .component{
+    width: 500px;
+    min-height: 785px;
+    //main user image
+    > img{
+      top: 56px;
+      left: 37px;
+    }
+  }
+  //component with statisctics
+  .top_component{
+    left: 17px;
+    right: 17px;
+    min-height: 183px;
+    //follow button
+    .btn_style {
+      width: 134px;
+      margin-top: 0;
+    }
+    //user name
+    h1{
+      margin-left: -90px;
+    }
+    //user address
+    h3 {
+        margin-left: 109px;
+        text-align: left;
+    }
+    //tooltip to copy the website address
+    .share_address{
+      left: 120px;
+      top: -56px;
+      padding: 5px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  //component with comments
+  .second_component {
+    margin-top: 133px;
+    min-height: 557px;
+    //text with event for showing and hiding comments
+    .comment_hide {
+      margin-left: 20px;
+    }
+    //separating line
+    hr{
+      width: 444.2px;
+      margin-top: 25.5px;
+    }
+    //user name in the comments section
+    .comment_name{
+      margin-top: 40.5px;
+    }
+    //user photo in the comments section
+    .comment_date{
+      margin-top: 40.5px;
+    }
+    //date in the comments section
+    .comment_img {
+      margin-top: 30.5px;
+    }
+    //comment content
+    .comment_content{
+      margin-top: 6px;
+    }
+  }
+  //section for adding a comment
+  .add_comment {
+      left: 17px;
+      width: 466px;
+      //input in the comment section
+      input{
+        width: 413px;
+      }
+      //button to send a comment
+      .btn_style{
+        width: 50%;
+        margin-left: 25%;
+        height: 40px;
+        letter-spacing: 2px;
+        -webkit-animation: wobble 700ms;
+        -moz-animation: wobble 700ms;
+        -ms-animation: wobble 700ms;
+        -o-animation: wobble 700ms;
+        animation: wobble 700ms;
+      }
+  }
+}

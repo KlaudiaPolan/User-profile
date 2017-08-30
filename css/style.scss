@@ -1,0 +1,411 @@
+//variables
+$navy-blue: #002C71;
+$light-navy-blue: #8298B9;
+$white: #ffffff;
+$grey: #444444;
+$orange: #FFA640;
+$dark-green: #343E00;
+
+//animation for follow and share button
+@keyframes wobble {
+  0% {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  45% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+//main component
+.component{
+  width: 320px;
+  min-height: 813px;
+  position: relative;
+  margin: 172px auto;
+  -webkit-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -moz-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -ms-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -o-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+
+  //navy blue top section
+  > :first-child {
+    width: 100%;
+    height: 95px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background: $navy-blue;
+  }
+
+  //main user image
+  > img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -12px;
+    left: 124px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+//component with statisctics
+.top_component{
+  min-height: 235px;
+  top: 36px;
+  left: 19px;
+  right: 19px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -moz-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -ms-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -o-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  background: $white;
+  //share button
+  .share{
+    width: 10.1px;
+    height: 10.1px;
+    right: 11.9px;
+    top: 11.9px;
+    position: absolute;
+  }
+  //tooltip to copy the website address
+  .share_address{
+    top: -97px;
+    left: -13px;
+    position: absolute;
+    padding: 5px;
+    font-family: "Montserrat";
+    color: $grey;
+    font-size: 11px;
+    line-height: 15px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border: 2px solid $navy-blue;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-animation: wobble 700ms;
+    -moz-animation: wobble 700ms;
+    -ms-animation: wobble 700ms;
+    -o-animation: wobble 700ms;
+    animation: wobble 700ms;
+    background-color: $white;
+  }
+  //user name
+  h1{
+    margin-top: 38px;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: $navy-blue;
+    letter-spacing: 0;
+  }
+  //user address
+  h3{
+    margin-top: 3px;
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: $light-navy-blue;
+    letter-spacing: 0;
+  }
+  //numers of likes, followers, following
+  .number{
+    font-family: "Montserrat";
+    font-size: 24px;
+    color: $orange;
+    letter-spacing: 0;
+  }
+  //signatures for numbers
+  .signature{
+    font-family: "Montserrat";
+    font-size: 10px;
+    color: $dark-green;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
+  //columns with numbers and signatures (for likes, following and followers)
+  .likes,.following,.followers{
+    float: left;
+  }
+  .following{
+    margin-left: 32px;
+    margin-right: 19px;
+  }
+  .likes{
+    margin-left: 20px;
+    margin-right: 18px;
+  }
+  .followers{
+    margin-left: 23px;
+  }
+  .statistic{
+    margin-top: 35px;
+  }
+  //separating line
+  .line{
+    height: 38px;
+    float: left;
+    -webkit-opacity: 0.1;
+    -moz-opacity: 0.1;
+    -ms-opacity: 0.1;
+    -o-opacity: 0.1;
+    opacity: 0.1;
+    border: 1px solid #979797;
+  }
+  //heart as a button for likes
+  .heart{
+    width: 12px;
+    height: 10.7px;
+    display: inline;
+    margin-left: 13px;
+  }
+}
+//component that holds comments
+.second_component{
+  max-height: 518px;
+  margin-top: 200px;
+  margin-left: 17px;
+  margin-right: 17px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -moz-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -ms-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -o-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background: $white;
+
+  //scroll
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+      width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    background: rgba(85,85,85,.12);
+  }
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    background: rgba(0,17,44,.12);
+  }
+  //text with event for showing and hiding comments
+  .comment_hide{
+    margin-left: 68px;
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: $orange;
+    letter-spacing: 0;
+  }
+  //user photo in the comments section
+  .comment_img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20.5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+  //user name in the comments section
+  .comment_name{
+    margin-top: 30.5px;
+    margin-left: 11px;
+    margin-bottom: 1px;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: $navy-blue;
+    letter-spacing: 0;
+  }
+  //date in the comments section
+  .comment_date{
+    margin-top: 30.5px;
+    margin-right: 27px;
+    float: right;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    -o-opacity: 0.5;
+    opacity: 0.5;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: $navy-blue;
+    letter-spacing: 0;
+  }
+  //comment content
+  .comment_content{
+    margin-left: 71px;
+    margin-right: 36px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: $grey;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+  //separating line
+  hr{
+    width: 260px;
+    margin-top: 19.5px;
+    margin-bottom: 0;
+    border: 1px solid #EBEBEB;
+  }
+  //first comment image
+  :nth-child(2) .comment_img{
+    margin-top: 30px;
+  }
+  //first comment name
+  :nth-child(2) .comment_name{
+    margin-top: 40px;
+  }
+  //first comment date
+  :nth-child(2) .comment_date{
+    margin-top: 40px;
+  }
+}
+//follow button
+.btn_style{
+  width: 248px;
+  height: 46px;
+  margin-top: 21px;
+  margin-bottom: 17px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  color: $white;
+  letter-spacing: 4.2px;
+  border: none;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: $orange;
+  &:focus{
+    outline: none;
+  }
+}
+//section for adding a comment
+.add_comment{
+  width: 284px;
+  min-height: 62.5px;
+  left: 19px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -moz-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -ms-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -o-box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: $white;
+  //input in the comment section
+  input{
+    margin-left: 25px;
+    margin-top: 14.5px;
+    padding-left: 3px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: $light-navy-blue;
+    letter-spacing: 0;
+    border: none;
+    border-bottom: 2px solid #DBE0E8;
+    &:focus{
+      outline: 2px solid #DBE0E8;
+    }
+
+  }
+  //button to send a comment
+  .btn_style{
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    letter-spacing: 1px;
+    -webkit-animation: wobble 700ms;
+    -moz-animation: wobble 700ms;
+    -ms-animation: wobble 700ms;
+    -o-animation: wobble 700ms;
+    animation: wobble 700ms;
+    &:hover{
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      background-color: $navy-blue;
+    }
+
+  }
+}
+@import "responsive";

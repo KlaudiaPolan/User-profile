@@ -1,0 +1,64 @@
+{
+  "statistics": [
+    {
+      "id": 1,
+      "user_img": "images/user.jpg",
+      "name": "Harvey Specter",
+      "address": "New York, USA",
+      "likes": 121,
+      "following": 723,
+      "followers": 4436
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-08-20T17:55:51.326Z"
+    },
+    {
+      "id": 2,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-07-29T17:55:51.326Z"
+    },
+    {
+      "id": 3,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-05-29T17:55:51.326Z"
+    },
+    {
+      "id": 4,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-06-24T17:55:51.326Z"
+    },
+    {
+      "id": 5,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-08-14T17:55:51.326Z"
+    },
+    {
+      "id": 6,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-05-04T17:55:51.326Z"
+    },
+    {
+      "id": 7,
+      "image": "images/user.jpg",
+      "name": "Mike Ross",
+      "content": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. ",
+      "date": "2017-01-10T17:55:51.326Z"
+    }
+  ]
+}
